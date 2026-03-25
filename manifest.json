@@ -1,0 +1,86 @@
+{
+  "name": "السراج للتجهيزات الصناعية - Al-Seraj Industrial Equipment",
+  "short_name": "السراج",
+  "description": "الوكيل الحصري المعتمد لـ Asenware و Ekingair في اليمن وشرق إفريقيا. توريد وتركيب مصانع الأدوية، أنظمة الإنذار بالحريق، الإخماد، التكييف الصناعي.",
+  "start_url": "https://karar011.github.io/al-seraj-website-v2/",
+  "scope": "/al-seraj-website-v2/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#1565c0",
+  "background_color": "#060f1e",
+  "categories": ["business", "industrial"],
+  "screenshots": [
+    {
+      "src": "/al-seraj-website-v2/screenshot-1.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/al-seraj-website-v2/screenshot-2.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/al-seraj-website-v2/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/al-seraj-website-v2/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/al-seraj-website-v2/icon-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "اتصل بنا",
+      "short_name": "اتصل",
+      "description": "تواصل مع فريق السراج",
+      "url": "https://karar011.github.io/al-seraj-website-v2/?action=contact",
+      "icons": [
+        {
+          "src": "/al-seraj-website-v2/icon-contact.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "خدماتنا",
+      "short_name": "الخدمات",
+      "description": "اعرف عن خدماتنا",
+      "url": "https://karar011.github.io/al-seraj-website-v2/?action=services",
+      "icons": [
+        {
+          "src": "/al-seraj-website-v2/icon-services.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "screenshots_ar": [
+    {
+      "src": "/al-seraj-website-v2/screenshot-ar-1.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "lang": "ar"
+    }
+  ],
+  "lang": "ar",
+  "dir": "rtl",
+  "prefer_related_applications": false
+}
