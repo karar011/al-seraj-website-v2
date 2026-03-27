@@ -6,15 +6,23 @@
   <!-- الصفحة الرئيسية -->
   <url>
     <loc>https://karar011.github.io/al-seraj-website-v2/</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <!-- قسم المنتجات -->
+  <url>
+    <loc>https://karar011.github.io/al-seraj-website-v2/#products</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <!-- قسم الخدمات -->
   <url>
     <loc>https://karar011.github.io/al-seraj-website-v2/#services</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -22,17 +30,33 @@
   <!-- قسم المشاريع -->
   <url>
     <loc>https://karar011.github.io/al-seraj-website-v2/#projects</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- قسم العروض الخاصة -->
+  <url>
+    <loc>https://karar011.github.io/al-seraj-website-v2/#offers</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- قسم المدونة -->
+  <url>
+    <loc>https://karar011.github.io/al-seraj-website-v2/#blog</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <!-- قسم الاتصال -->
   <url>
     <loc>https://karar011.github.io/al-seraj-website-v2/#contact</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
 
 </urlset>
