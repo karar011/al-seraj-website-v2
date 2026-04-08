@@ -334,7 +334,7 @@
         </div>
         <div class="container mx-auto flex flex-col md:flex-row items-center relative z-10">
             <div class="md:w-1/2 space-y-8 animate-fade-in-up">
-                <h1 class="text-4xl md:text-6xl font-bold leading-tight">كل ما تحتاجه لبناء <span class="text-secondary">مصنع أدوية محترف</span></h1>
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight">كل ما تحتاجه لبناء <span class="text-secondary">مصنع أدوية بجميع المواصفات العالمية</span></h1>
                 <p class="text-xl text-blue-100 max-w-lg">نحن نبني مصانع الأدوية التي تسمح لعملائنا بتحقيق رؤيتهم. الوكيل المعتمد للشركة المصرية المتحدة و PharMatrix الأردنية و Asenware و Ekingair.</p>
                 <div class="flex space-x-reverse space-x-4 flex-wrap">
                     <a href="#contact" class="bg-secondary text-dark px-8 py-3 rounded-lg font-bold hover:bg-yellow-400 transition pulse-button">تواصل معنا الآن</a>
@@ -524,7 +524,7 @@
                     </div>
                 </div>
                 <div class="flex text-yellow-400 mb-3">⭐⭐⭐⭐⭐</div>
-                <p class="text-gray-600 text-sm leading-relaxed">"أوصي بشدة بشركة السراج. لديهم خبرة عميقة وفريق محترف يفهم احتياجات السوق الإقليمي."</p>
+                <p class="text-gray-600 text-sm leading-relaxed">"أوصي بشدة بشركة السراج. لديهم خبرة عميقة وفريق متخصص بجميع المواصفات العالمية يفهم احتياجات السوق الإقليمي."</p>
             </div>
         </div>
     </section>
@@ -696,24 +696,144 @@
             menu.classList.toggle('hidden');
         }
 
-        // Language Toggle (Placeholder for i18n implementation)
+        // Auto-detect user language on page load
+        function detectUserLanguage() {
+            const htmlRoot = document.getElementById('html-root');
+            const userLang = navigator.language || navigator.userLanguage;
+            const langCode = userLang.split('-')[0];
+            
+            // Check if user's browser language is English
+            if (langCode === 'en') {
+                switchToEnglish();
+            } else {
+                // Default to Arabic
+                switchToArabic();
+            }
+        }
+        
+        // Switch to English
+        function switchToEnglish() {
+            const htmlRoot = document.getElementById('html-root');
+            htmlRoot.setAttribute('lang', 'en');
+            htmlRoot.setAttribute('dir', 'ltr');
+            
+            const langButton = document.querySelector('.language-toggle');
+            langButton.textContent = 'العربية';
+            
+            // Store preference
+            localStorage.setItem('preferredLanguage', 'en');
+            
+            // Translate content
+            translatePageToEnglish();
+        }
+        
+        // Switch to Arabic
+        function switchToArabic() {
+            const htmlRoot = document.getElementById('html-root');
+            htmlRoot.setAttribute('lang', 'ar');
+            htmlRoot.setAttribute('dir', 'rtl');
+            
+            const langButton = document.querySelector('.language-toggle');
+            langButton.textContent = 'EN';
+            
+            // Store preference
+            localStorage.setItem('preferredLanguage', 'ar');
+            
+            // Translate content
+            translatePageToArabic();
+        }
+        
+        // Language Toggle Function
         function toggleLanguage() {
             const htmlRoot = document.getElementById('html-root');
             const currentLang = htmlRoot.getAttribute('lang');
-            const newLang = currentLang === 'ar' ? 'en' : 'ar';
-            const newDir = newLang === 'ar' ? 'rtl' : 'ltr';
             
-            htmlRoot.setAttribute('lang', newLang);
-            htmlRoot.setAttribute('dir', newDir);
-            
-            // Update button text
-            const langButton = document.querySelector('.language-toggle');
-            langButton.textContent = newLang === 'ar' ? 'EN' : 'العربية';
-            
-            // Note: Full translation requires a translation system (i18n)
-            // This is a placeholder that changes direction
-            alert('تم تفعيل وضع اللغة الإنجليزية (تحت التطوير)');
+            if (currentLang === 'ar') {
+                switchToEnglish();
+            } else {
+                switchToArabic();
+            }
         }
+        
+        // Translation dictionaries
+        const translations = {
+            en: {
+                'الرئيسية': 'Home',
+                'خدماتنا': 'Services',
+                'أعمالنا': 'Projects',
+                'آراء العملاء': 'Testimonials',
+                'عن الشركة': 'About',
+                'تواصل معنا': 'Contact Us',
+                'كل ما تحتاجه لبناء مصنع أدوية بجميع المواصفات العالمية': 'Everything you need to build a pharmaceutical factory with international standards',
+                'الوكيل الحصري المعتمد لـ Asenware و Ekingair': 'Exclusive authorized agent for Asenware and Ekingair',
+                'خدماتنا التخصصية': 'Our Specialized Services',
+                'نقدم حلولاً متكاملة من التصميم إلى التنفيذ': 'We provide integrated solutions from design to implementation',
+                'أبرز مشاريعنا الإقليمية': 'Our Leading Regional Projects',
+                'آراء عملائنا': 'Our Clients\'s Opinions',
+                'ماذا يقول عملاؤنا عن خدماتنا': 'What our clients say about our services',
+                'عن شركة السراج': 'About Al-Seraj Company',
+                'لماذا تختار السراج؟': 'Why choose Al-Seraj?',
+                'تواصل مع خبراء السراج': 'Contact Al-Seraj Experts',
+                'نحن هنا لمساعدتك في حل مشاكل مشروعك وبناء رؤيتك الصناعية': 'We are here to help you solve your project problems and build your industrial vision',
+                'اتصل بنا': 'Call us',
+                'واتساب': 'WhatsApp',
+                'البريد الإلكتروني': 'Email',
+                'الاسم': 'Name',
+                'الهاتف': 'Phone',
+                'نوع الاستفسار': 'Inquiry Type',
+                'تفاصيل المشروع': 'Project Details',
+                'إرسال الطلب للمتابعة': 'Submit Request',
+                'تواصل معنا عبر الواتساب': 'Contact us via WhatsApp'
+            },
+            ar: {
+                'Home': 'الرئيسية',
+                'Services': 'خدماتنا',
+                'Projects': 'أعمالنا',
+                'Testimonials': 'آراء العملاء',
+                'About': 'عن الشركة',
+                'Contact Us': 'تواصل معنا'
+            }
+        };
+        
+        // Translate page to English
+        function translatePageToEnglish() {
+            const elements = document.querySelectorAll('*');
+            elements.forEach(el => {
+                if (el.childNodes.length === 1 && el.childNodes[0].nodeType === 3) {
+                    const text = el.textContent.trim();
+                    if (translations.en[text]) {
+                        el.textContent = translations.en[text];
+                    }
+                }
+            });
+        }
+        
+        // Translate page to Arabic
+        function translatePageToArabic() {
+            const elements = document.querySelectorAll('*');
+            elements.forEach(el => {
+                if (el.childNodes.length === 1 && el.childNodes[0].nodeType === 3) {
+                    const text = el.textContent.trim();
+                    if (translations.ar[text]) {
+                        el.textContent = translations.ar[text];
+                    }
+                }
+            });
+        }
+        
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLanguage = localStorage.getItem('preferredLanguage');
+            if (savedLanguage) {
+                if (savedLanguage === 'en') {
+                    switchToEnglish();
+                } else {
+                    switchToArabic();
+                }
+            } else {
+                detectUserLanguage();
+            }
+        });
 
         // Form Submission
         function handleSubmit(event) {
@@ -767,6 +887,13 @@
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(el);
         });
+        
+        // Ensure language detection runs after DOM is fully loaded
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', detectUserLanguage);
+        } else {
+            detectUserLanguage();
+        }
     </script>
 </body>
 </html>
