@@ -1,14 +1,19 @@
 {
   "name": "السراج للتجهيزات الصناعية - Al-Seraj Industrial Equipment",
   "short_name": "السراج",
-  "description": "الوكيل الحصري المعتمد لـ Asenware و Ekingair في اليمن وشرق إفريقيا. توريد وتركيب مصانع الأدوية، أنظمة الإنذار بالحريق، الإخماد، التكييف الصناعي.",
+  "description": "الوكيل الحصري المعتمد لـ Asenware و Ekingair. متخصصون في توريد وتركيب مصانع الأدوية المتكاملة، أنظمة الإنذار والحريق، التكييف الصناعي. خدمات في اليمن، الصومال، إثيوبيا، كينيا، تنزانيا منذ 2006.",
   "start_url": "https://karar011.github.io/al-seraj-website-v2/",
   "scope": "/al-seraj-website-v2/",
+  "contact": {
+    "phone": "+967-777-409-273",
+    "email": "contact@asserag.com",
+    "whatsapp": "+967777409273"
+  },
   "display": "standalone",
   "orientation": "portrait-primary",
-  "theme_color": "#1565c0",
+  "theme_color": "#1e3a8a",
   "background_color": "#060f1e",
-  "categories": ["business", "industrial"],
+  "categories": ["business", "industrial", "manufacturing"],
   "screenshots": [
     {
       "src": "/al-seraj-website-v2/screenshot-1.png",
@@ -82,5 +87,21 @@
   ],
   "lang": "ar",
   "dir": "rtl",
-  "prefer_related_applications": false
+  "prefer_related_applications": false,
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.alseraj.industrial",
+      "id": "com.alseraj.industrial"
+    }
+  ],
+  "screenshots_en": [
+    {
+      "src": "/al-seraj-website-v2/screenshot-en-1.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "lang": "en"
+    }
+  ]
 }

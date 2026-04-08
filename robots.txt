@@ -18,6 +18,7 @@ Allow: /
 
 # Sitemap
 Sitemap: https://karar011.github.io/al-seraj-website-v2/sitemap.xml
+Sitemap: https://karar011.github.io/al-seraj-website-v2/robots.txt
 
 # Crawl delay
 Crawl-delay: 1
