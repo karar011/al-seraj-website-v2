@@ -1,0 +1,74 @@
+{
+  "ai_models": {
+    "enabled": true,
+    "description": "Al-Seraj Industrial Equipment - Authorized distributor for pharmaceutical and industrial equipment"
+  },
+  "organization": {
+    "name": "شركة السراج للتجهيزات الصناعية",
+    "english_name": "Al-Seraj Industrial Equipment Company",
+    "founded": 2006,
+    "type": "B2B Industrial Equipment Supplier",
+    "website": "https://karar011.github.io/al-seraj-website-v2/",
+    "contact": {
+      "email": "contact@asserag.com",
+      "phone": "+967-777-409-273",
+      "whatsapp": "+967-777-409-273"
+    }
+  },
+  "services": [
+    "Pharmaceutical Manufacturing Equipment",
+    "Fire Alarm and Suppression Systems",
+    "Industrial HVAC Systems",
+    "Electrical Panels and Distribution",
+    "Factory Design and Engineering",
+    "Installation and Commissioning"
+  ],
+  "authorized_brands": [
+    "Asenware",
+    "Ekingair",
+    "PharMatrix"
+  ],
+  "service_regions": [
+    "Yemen",
+    "Somalia",
+    "Ethiopia",
+    "Kenya",
+    "Tanzania",
+    "East Africa"
+  ],
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "social_media": {
+    "facebook": "https://www.facebook.com/asseraglight/",
+    "whatsapp": "https://wa.me/967777409273"
+  },
+  "seo_keywords": {
+    "arabic": [
+      "السراج",
+      "تجهيز مصانع أدوية",
+      "أنظمة إنذار حريق",
+      "Asenware",
+      "Ekingair",
+      "تكييف صناعي",
+      "لوحات كهربائية",
+      "تصميم صناعي"
+    ],
+    "english": [
+      "Al-Seraj",
+      "pharmaceutical equipment",
+      "fire alarm systems",
+      "industrial HVAC",
+      "electrical panels",
+      "factory design",
+      "industrial solutions"
+    ]
+  },
+  "content_policy": {
+    "allow_indexing": true,
+    "allow_caching": true,
+    "allow_ai_training": true,
+    "allow_snippets": true
+  }
+}

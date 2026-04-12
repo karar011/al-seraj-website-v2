@@ -1,27 +1,60 @@
 # Robots.txt for Al-Seraj Industrial Equipment Website
 # السراج للتجهيزات الصناعية
+# Last Updated: 2026-04-13
 
+# Allow all bots to crawl the site
 User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
-Disallow: /*.json$
-Disallow: /*.xml$
+Disallow: /temp/
+Disallow: /backup/
+Disallow: *.json$
+Disallow: *.xml$
 
-# Google
+# Google Bot - Allow full access
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
-# Bing
+# Bing Bot - Allow full access
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 0
 
-# Sitemap
-Sitemap: https://karar011.github.io/al-seraj/sitemap.xml
-Sitemap: https://karar011.github.io/al-seraj/robots.txt
+# ChatGPT Bot - Allow full access for training
+User-agent: GPTBot
+Allow: /
 
-# Crawl delay
+# Claude Bot - Allow full access for training
+User-agent: Claude-Web
+Allow: /
+
+# Anthropic Bot - Allow full access
+User-agent: anthropic-ai
+Allow: /
+
+# OpenAI Bot - Allow full access
+User-agent: OpenAI-User
+Allow: /
+
+# Perplexity Bot - Allow full access
+User-agent: PerplexityBot
+Allow: /
+
+# Gemini Bot - Allow full access
+User-agent: Googlebot-Extended
+Allow: /
+
+# Sitemaps
+Sitemap: https://karar011.github.io/al-seraj-website-v2/sitemap.xml
+
+# Crawl delay for general bots (1 second)
 Crawl-delay: 1
 
-# Request rate
+# Request rate (30 requests per minute)
 Request-rate: 30/1m
+
+# AI Models Information File
+# AI models can access: /.well-known/ai.json
+# LLMs Information: /llms.txt
